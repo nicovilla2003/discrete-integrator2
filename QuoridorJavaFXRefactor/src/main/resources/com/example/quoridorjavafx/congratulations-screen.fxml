@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="447.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quoridorjavafx.control.CongratulationScreenController">
+   <children>
+      <ImageView fx:id="leftImage" fitHeight="348.0" fitWidth="366.0" layoutY="98.0" opacity="0.75" pickOnBounds="true" />
+      <Label layoutX="240.0" layoutY="51.0" text="Congratulations">
+         <font>
+            <Font name="Segoe UI Semibold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="184.0" text="you've just won!">
+         <font>
+            <Font name="Segoe UI Semibold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerName" alignment="CENTER" contentDisplay="CENTER" layoutY="118.0" prefHeight="40.0" prefWidth="683.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="rightImage" fitHeight="348.0" fitWidth="366.0" layoutX="317.0" layoutY="98.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.75" pickOnBounds="true" />
+      <Label fx:id="score" alignment="CENTER" contentDisplay="CENTER" layoutY="297.0" prefHeight="101.0" prefWidth="683.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

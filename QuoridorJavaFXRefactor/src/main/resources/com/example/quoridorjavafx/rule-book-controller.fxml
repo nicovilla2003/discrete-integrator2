@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quoridorjavafx.control.RuleBookController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" layoutX="50.0" layoutY="97.0" prefHeight="365.0" prefWidth="620.0">
+         <content>
+            <TextArea editable="false" prefHeight="362.0" prefWidth="621.0" style="-fx-wrap-text: true;" text="Introduction:&#10;Quoridor is a delightful strategy game that involves navigating a maze-like board to reach your opponent's side before they reach yours. Here's a breakdown of the game along with instructions on how to play:&#10;&#10;Game Components:&#10;- Board: The game is played on a 9x9.&#10;- Pawns: Each player has a pawn that starts at their respective side's center.&#10;- Fences: There are a limited number of fences that players can place to block their opponent's path.&#10;&#10;Objective:&#10;The goal is to be the first to move your pawn to the opposite side of the board.&#10;&#10;Setup:&#10;- Board: Place the board between the players so that each player faces the board with a row of squares in front of them.&#10;- Pawns: Players place their pawns on the center square of their respective sides.&#10;- Fences: In a two-player game, each player gets 10 fences. &#10;&#10;Gameplay:&#10;Players take turns to either move their pawn or place a fence.&#10;&#10;Moving the Pawn:&#10;- On your turn, you can move your pawn one square in any direction—up, down, left, or right, but not diagonally.&#10;- You can't move through or over the opponent's pawn.&#10;- The only exception is if you're playing a two-player game and your opponent's pawn is right next to you; in that case, you can jump over their pawn to the square's adjecent to them.&#10;&#10;Placing a Fence:&#10;- Instead of moving your pawn, you can place one fence on the board.&#10;- Fences can be placed vertically or horizontally between two squares.&#10;- Fences must be placed so that they don't completely block either player's path to their goal.&#10;- You can't place a fence that would isolate your opponent's pawn from reaching their side.&#10;- Players cannot completely block off any player from their side.&#10;&#10;Winning the Game:&#10;The first player to get their pawn to the opposite side of the board wins.&#10;&#10;Strategies:&#10;- Blocking Opponents: Place fences strategically to block your opponent's path, forcing them to take longer routes.&#10;- Creating Paths: Use your moves to create paths for your pawn while obstructing your opponent.&#10;- Anticipating Moves: Predict your opponent's moves to block their path effectively while advancing your own pawn.&#10;&#10;Conclusion:&#10;Quoridor is a game that demands tactical thinking, spatial awareness, and a good sense of timing. The balance between blocking your opponent and advancing your pawn is key to winning.&#10;&#10;Ready to start playing?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextArea>
+         </content>
+      </ScrollPane>
+      <Label layoutX="174.0" layoutY="38.0" text="Quoridor Game Instructions">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

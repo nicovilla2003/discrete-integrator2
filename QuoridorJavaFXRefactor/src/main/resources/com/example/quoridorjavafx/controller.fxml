@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="800.0" style="-fx-background-color: #b1e4b9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quoridorjavafx.control.Controller">
+    <children>
+<GridPane fx:id="chessBoard" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0">
+    <columnConstraints>
+    </columnConstraints>
+    <rowConstraints>
+    </rowConstraints>
+</GridPane>
+        <RadioButton fx:id="movePawn" layoutX="200.0" layoutY="860.0" mnemonicParsing="false" onAction="#changeMoveType" text="Move Pawn">
+            <toggleGroup>
+                <ToggleGroup fx:id="Move" />
+            </toggleGroup>
+            <font>
+                <Font name="Segoe UI Semibold" size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="placeVerticalWall" layoutX="390.0" layoutY="820.0" mnemonicParsing="false" onAction="#changeMoveType" text="Place Vertical Wall" toggleGroup="$Move">
+            <font>
+                <Font name="Segoe UI Semibold" size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="placeHorizontalWall" layoutX="390.0" layoutY="900.0" mnemonicParsing="false" onAction="#changeMoveType" prefHeight="20.0" prefWidth="194.0" text="Place Horizontal Wall" toggleGroup="$Move">
+            <font>
+                <Font name="Segoe UI Semibold" size="14.0" />
+            </font>
+        </RadioButton>
+        <Button fx:id="instructions" layoutX="650.0" layoutY="850.0" mnemonicParsing="false" onAction="#openInstructons" prefHeight="49.0" prefWidth="78.0" text="Instructions" />
+    </children>
+        </AnchorPane>
